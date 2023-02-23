@@ -37,6 +37,7 @@ msort :: [Int] -> [Int]
 msort [] = []
 msort [x] = [x]
 msort xs = merge (msort firstPart) (msort secondPart)
+    -- Aixó també funciona, el EE el causava la funció merge comentada
     -- | (length xs == 2) = if (head xs) > (last xs) then reverse xs else xs
     -- | otherwise = merge (msort firstPart) (msort secondPart)
     where
